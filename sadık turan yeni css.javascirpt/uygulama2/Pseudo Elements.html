@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-line {
+        font-weight: bold;
+        color: brown;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+      }
+      p.about::first-line {
+        color: fuchsia;
+      }
+      p::first-letter {
+        font-size: 48px;
+      }
+      ::selection {
+        background-color: cornflowerblue;
+      }
+      p::after {
+        content: "\24C2";
+        padding: 15px;
+        font-size: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quas
+      aliquid ex adipisci qui rerum voluptates exercitationem! Vero, quasi
+      debitis nobis at consectetur necessitatibus error illo voluptatibus
+      temporibus corporis. Numquam?
+    </p>
+    <p class="about">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quas
+      aliquid ex adipisci qui rerum voluptates exercitationem! Vero, quasi
+      debitis nobis at consectetur necessitatibus error illo voluptatibus
+      temporibus corporis. Numquam?
+    </p>
+  </body>
+</html>
